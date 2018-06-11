@@ -38,6 +38,8 @@ class SkillActivity : BaseActivity()
     fun onBallerClicked( view: View )
     {
         beginnerSkillBtn.isChecked = false
+        intermediateSkillBtn.isChecked = false
+        professionalSkillBtn.isChecked = false
         player.skill = "baller"
 
     }
@@ -45,7 +47,25 @@ class SkillActivity : BaseActivity()
     fun onBeginnerClicked( view: View )
     {
         ballerSkillBtn.isChecked = false
+        intermediateSkillBtn.isChecked = false
+        professionalSkillBtn.isChecked = false
         player.skill = "beginner"
+    }
+
+    fun onIntermediateClicked( view: View )
+    {
+        ballerSkillBtn.isChecked = false
+        beginnerSkillBtn.isChecked = false
+        professionalSkillBtn.isChecked = false
+        player.skill = "intermediate"
+    }
+
+    fun onProfessionalClicked( view: View )
+    {
+        ballerSkillBtn.isChecked = false
+        beginnerSkillBtn.isChecked = false
+        intermediateSkillBtn.isChecked = false
+        player.skill = "professional"
     }
 
     fun onSkillFinishClicked( view: View)

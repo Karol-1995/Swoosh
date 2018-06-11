@@ -51,6 +51,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -107,5 +108,64 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <ToggleButton
+            android:id="@+id/intermediateSkillBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/swoosh_toggle"
+            android:hapticFeedbackEnabled="true"
+            android:onClick="onIntermediateClicked"
+            android:text="intermediate"
+            android:textColor="@android:color/white"
+            android:textOff="intermediate"
+            android:textOn="intermediate"
+            tools:layout_editor_absoluteX="580dp"
+            tools:layout_editor_absoluteY="255dp" />
+
+        <ToggleButton
+            android:id="@+id/professionalSkillBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/swoosh_toggle"
+            android:onClick="onProfessionalClicked"
+            android:text="professional"
+            android:textColor="@android:color/white"
+            android:textOff="professional"
+            android:textOn="professional"
+            tools:layout_editor_absoluteX="235dp"
+            tools:layout_editor_absoluteY="456dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="250dp"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/choose"
+        android:textColor="@android:color/white"
+        android:textSize="100sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
 </android.support.constraint.ConstraintLayout>

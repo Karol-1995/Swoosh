@@ -15,4 +15,7 @@
     <string name="baller">BALLER</string>
     <string name="finish">FINISH</string>
     <string name="search_league">Looking for a co-ed beginner league near you...</string>
+    <string name="let_s_try_it">Let\'s try it!</string>
+    <string name="which_of_those_you_choose">Which of those you choose?</string>
+    <string name="choose">Choose...</string>
 </resources>
